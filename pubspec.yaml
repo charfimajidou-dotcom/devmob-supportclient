@@ -1,0 +1,42 @@
+name: devmob_supportclient
+description: "DEVMOB SupportClient - Application mobile de support client / ticketing (Projet Flutter 07)."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Base de données locale (SQLite)
+  sqflite: ^2.3.3
+  # SQLite dans le navigateur (pour lancer sur Chrome)
+  sqflite_common_ffi_web: any
+  path: ^1.9.0
+
+  # Gestion d'état
+  provider: ^6.1.2
+
+  # Session utilisateur + préférence mode sombre
+  shared_preferences: ^2.2.3
+
+  # Hachage des mots de passe (SHA-256)
+  crypto: ^3.0.3
+
+  # Pièces jointes (images / captures d'écran)
+  image_picker: ^1.1.2
+
+  # Graphiques (statistiques)
+  fl_chart: ^0.69.0
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
